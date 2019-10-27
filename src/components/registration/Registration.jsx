@@ -25,6 +25,10 @@ export default class Registration extends React.Component {
                             <i className="fa fa-user-circle-o" aria-hidden="true"/>
                             <input name="midlle_name" placeholder="Отчетсво"/>
                         </div>
+                        <div className="form-group ">
+                            <i className="fa fa-envelope-o" aria-hidden="true"/>
+                            <input type="email" name="email" placeholder="Email"/>
+                        </div>
                         <div className="form-group">
                             <i className="fa fa-user-date" aria-hidden="true"/>
                             <input type="date" name="date"/>
@@ -48,10 +52,6 @@ export default class Registration extends React.Component {
                         <div className="form-group ">
                             <i className="fa fa-envelope-o" aria-hidden="true"/>
                             <input type="text" name="name" placeholder="Instagram"/>
-                        </div>
-                        <div className="form-group ">
-                            <i className="fa fa-envelope-o" aria-hidden="true"/>
-                            <input type="email" name="email" placeholder="Email"/>
                         </div>
                         <div className="form-group ">
                             <i className="fa fa-key" aria-hidden="true"/>

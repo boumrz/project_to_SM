@@ -2,13 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9212515d-424b-4f2d-b8c3-64a8049c6d34" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/registration/Registration.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/registration.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/events/Events.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/header/Header.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ui/Button/Button.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/Button.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/Header.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/Header.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/registration/Registration.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/registration/Registration.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/header.css" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,6 +35,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editorconfig.notification" value="null" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/ui" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -40,6 +44,17 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="yarn" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Desktop\Project SM\project_to_SM\src\style" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Desktop\Project SM\project_to_SM\src\components\ui" />
+      <recent name="C:\Users\User\Desktop\Project SM\project_to_SM\src\components\assets\images" />
+      <recent name="C:\Users\User\Desktop\Project SM\project_to_SM\src\style" />
+      <recent name="C:\Users\User\Desktop\Project SM\project_to_SM\src\components\header" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -81,7 +96,7 @@
       <option name="presentableId" value="Default" />
       <updated>1572155986695</updated>
       <workItem from="1572155988099" duration="207000" />
-      <workItem from="1572158916217" duration="4512000" />
+      <workItem from="1572158916217" duration="6397000" />
     </task>
     <servers />
   </component>
