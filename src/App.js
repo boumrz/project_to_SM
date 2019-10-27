@@ -1,14 +1,21 @@
 import React from 'react';
-import Header from './components/header/Header'
+import { BrowserRouter, Route, Redirect, Switch } from "react-router-dom";
+// import Header from './components/header/Header'
+import Registration from "../src/components/registration/Registration";
 
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <Header />
-    </div>
-  );
+class App extends React.Component {
+    render() {
+        return(
+            <BrowserRouter>
+                <Switch>
+                    <Route exact path="/registration" component={Registration}/>
+                    <Redirect to="/registration"/>
+                </Switch>
+            </BrowserRouter>
+        )
+    }
 }
 
 export default App;
