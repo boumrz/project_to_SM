@@ -3,22 +3,23 @@ import '../../style/Header.css';
 import Logo from '../../components/assets/images/logo.svg'
 import Button from '../ui/Button/Button'
 import { Link } from 'react-router-dom';
+// import {Redirect} from "react-router-dom";
 import Registration from "../registration/Registration";
+// import Login from "../login/Login";
+import {Route, Switch, withRouter } from 'react-router-dom';
 
 class Header extends React.Component {
   constructor(props) {
     super(props);
     this.state = { isFormOn: false };
-
-    // This binding is necessary to make `this` work in the callback
-    this.handleClick = this.handleClick.bind(this);
   }
 
-  handleClick() {
-    this.setState(prevState => ({
-      isFormOn: !prevState.isFormOn
-    }));
-  }
+  handleClickRegistration = () => {
+      this.props.history.push('/registration');
+  };
+  handleClickLogin = () => {
+      this.props.history.push('/login');
+  };
 
   render() {
     return (
@@ -29,21 +30,29 @@ class Header extends React.Component {
         <Link to='/FAQ'>  <div className="header_li li"> FAQ </div> </Link>
         <div className="header_li ">
           <div className="header_li">
-            <Button name="Войти" color="white" />
-            <div onClick={this.handleClick}>
-              <Button name="Регистрация" color="white" />
-              {this.state.isFormOn ? <Registration className="Form" /> : ''}
-            </div>
-
+              <Switch>
+              <Route path="/registration" component={Registration} />
+              <Route
+                  path="/events"
+                  render={() => (
+                      <React.Fragment>
+                          <div onClick={this.handleClickLogin}>
+                              <Button name="Войти" color="white" />
+                          </div>
+                          <div onClick={this.handleClickRegistration}>
+                              <Button name="Регистрация" color="white" />
+                          </div>
+                      </React.Fragment>
+                  )}
+              />
+            </Switch>
 
           </div>
         </div>
-
       </header>
-
     )
   }
 }
 
-export default Header;
+export default withRouter(Header);
 

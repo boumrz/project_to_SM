@@ -2,16 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9212515d-424b-4f2d-b8c3-64a8049c6d34" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/events/Events.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/header/Header.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui/Button/Button.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/Button.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/Header.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/common/FormsControls/FormsControls.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/common/FormsControls/FormsControls.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/login/Login.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/utils/validators/validators.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/auth-reducer.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/redux-store.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/Header.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/events/Events.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/events/Events.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/Header.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/registration/Registration.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/registration/Registration.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/header.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,8 +26,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -38,10 +42,13 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/ui" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="yarn" />
   </component>
@@ -96,7 +103,8 @@
       <option name="presentableId" value="Default" />
       <updated>1572155986695</updated>
       <workItem from="1572155988099" duration="207000" />
-      <workItem from="1572158916217" duration="6397000" />
+      <workItem from="1572158916217" duration="7586000" />
+      <workItem from="1572249869166" duration="24357000" />
     </task>
     <servers />
   </component>
@@ -108,7 +116,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
