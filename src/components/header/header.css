@@ -1,0 +1,76 @@
+.header-container {
+  background-image: url("../assets/images/background-head.png");
+  margin-left: -2em;
+  margin-top: -1.3em;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+
+.header_li {
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  height: 4.5em;
+  padding-top: 2.5em;
+  padding-bottom: 1.5em;
+  padding-left: 15em;
+}
+
+.li {
+  font-size: 0.9em;
+  font-family: Montserrat, serif;
+  padding-top: 1em;
+}
+
+.li:hover {
+  border-bottom: 2px solid white;
+  transition: all 0.1s;
+}
+
+link {
+  text-decoration: none;
+}
+
+.button-container {
+  padding-top: 0.5em;
+  margin-right: 5em;
+  margin-top: 0.1em;
+}
+
+button {
+  background: #EEF4FB;
+  border: 0.1em solid #D2E3F3;
+  border-radius: 10em;
+  margin-top: 0.6em;
+  width: 9.5em;
+  height: 2.4em;
+}
+
+.signIn {
+  border: 0;
+  background: #fdc526;
+  color: white;
+}
+
+.signIn:hover {
+  cursor: pointer;
+}
+
+.registration {
+  border: 1px solid black;
+  background-color: Transparent;
+  cursor:pointer;
+}
+
+.registration:hover {
+  cursor: pointer;
+}
+
+

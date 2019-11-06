@@ -2,20 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9212515d-424b-4f2d-b8c3-64a8049c6d34" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/common/FormsControls/FormsControls.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/common/FormsControls/FormsControls.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/login/Login.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/utils/validators/validators.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/auth-reducer.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/redux-store.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/assets/images/Logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/assets/images/Pattern-1-copy-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/assets/images/background-head.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/events/Events.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/events/Events.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/registration/Registration.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/registration/Registration.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/Button/Button.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/Button.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/header.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,7 +29,11 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1Sm5ZbLaodcjoHnbDHBdvanP2LM" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editorconfig.notification" value="null" />
@@ -53,14 +51,16 @@
     <property name="nodejs_package_manager_path" value="yarn" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\User\Desktop\Project SM\project_to_SM\src\style" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\User\Desktop\Project SM\project_to_SM\src\components\ui" />
       <recent name="C:\Users\User\Desktop\Project SM\project_to_SM\src\components\assets\images" />
       <recent name="C:\Users\User\Desktop\Project SM\project_to_SM\src\style" />
       <recent name="C:\Users\User\Desktop\Project SM\project_to_SM\src\components\header" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Desktop\Project SM\project_to_SM\src\components\ui\Button" />
+      <recent name="C:\Users\User\Desktop\Project SM\project_to_SM\src\components\header" />
+      <recent name="C:\Users\User\Desktop\Project SM\project_to_SM\src\style" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -104,7 +104,8 @@
       <updated>1572155986695</updated>
       <workItem from="1572155988099" duration="207000" />
       <workItem from="1572158916217" duration="7586000" />
-      <workItem from="1572249869166" duration="24357000" />
+      <workItem from="1572249869166" duration="31186000" />
+      <workItem from="1573067000993" duration="5838000" />
     </task>
     <servers />
   </component>
@@ -123,5 +124,8 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

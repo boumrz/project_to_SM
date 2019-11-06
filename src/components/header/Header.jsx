@@ -1,11 +1,8 @@
 import React from 'react';
-import '../../style/Header.css';
-import Logo from '../../components/assets/images/logo.svg'
-import Button from '../ui/Button/Button'
+import './header.css';
+import Logo from '../../components/assets/images/Logo.png'
 import { Link } from 'react-router-dom';
-// import {Redirect} from "react-router-dom";
 import Registration from "../registration/Registration";
-// import Login from "../login/Login";
 import {Route, Switch, withRouter } from 'react-router-dom';
 
 class Header extends React.Component {
@@ -23,33 +20,34 @@ class Header extends React.Component {
 
   render() {
     return (
-      <header>
-        <img src={Logo} className="Img"  alt="logo"/>
-        <Link to='/camp'> <div className="header_li li"> ЛАГЕРЯ </div>  </Link>
-        <Link to='/change'>  <div className="header_li li"> СМЕНЫ </div> </Link>
-        <Link to='/FAQ'>  <div className="header_li li"> FAQ </div> </Link>
-        <div className="header_li ">
-          <div className="header_li">
-              <Switch>
-              <Route path="/registration" component={Registration} />
-              <Route
-                  path="/events"
-                  render={() => (
-                      <React.Fragment>
-                          <div onClick={this.handleClickLogin}>
-                              <Button name="Войти" color="white" />
-                          </div>
-                          <div onClick={this.handleClickRegistration}>
-                              <Button name="Регистрация" color="white" />
-                          </div>
-                      </React.Fragment>
-                  )}
-              />
-            </Switch>
-
-          </div>
+        <div className="header-container">
+            <header>
+                <img src={Logo} className="Img"  alt="logo"/>
+                <Link to='/camp'> <div className="header_li li"> НОВОСТИ </div>  </Link>
+                <Link to='/change'>  <div className="header_li li"> МЕРОПРИЯТИЯ </div> </Link>
+                <Link to='/FAQ'>  <div className="header_li li"> СКИДКИ </div> </Link>
+                <Link to='/camp'> <div className="header_li li"> ОРГАНИЗАЦИИ </div>  </Link>
+                <Link to='/change'>  <div className="header_li li"> О НАС </div> </Link>
+                <div className="button-container">
+                    <Switch>
+                        <Route path="/registration" component={Registration} />
+                        <Route
+                            path="/events"
+                            render={() => (
+                                <React.Fragment>
+                                    <div onClick={this.handleClickLogin}>
+                                        <button className="signIn">Войти</button>
+                                    </div>
+                                    <div onClick={this.handleClickRegistration}>
+                                        <button className="registration">Регистрация</button>
+                                    </div>
+                                </React.Fragment>
+                            )}
+                        />
+                    </Switch>
+                </div>
+            </header>
         </div>
-      </header>
     )
   }
 }
