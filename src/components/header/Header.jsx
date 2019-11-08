@@ -22,17 +22,17 @@ class Header extends React.Component {
     return (
         <div className="header-container">
             <header>
-                <img src={Logo} className="Img"  alt="logo"/>
+                <Link to="/">
+                    <img src={Logo} className="Img"  alt="logo"/>
+                </Link>
                 <Link to='/camp'> <div className="header_li li"> НОВОСТИ </div>  </Link>
                 <Link to='/change'>  <div className="header_li li"> МЕРОПРИЯТИЯ </div> </Link>
                 <Link to='/FAQ'>  <div className="header_li li"> СКИДКИ </div> </Link>
-                <Link to='/camp'> <div className="header_li li"> ОРГАНИЗАЦИИ </div>  </Link>
-                <Link to='/change'>  <div className="header_li li"> О НАС </div> </Link>
                 <div className="button-container">
                     <Switch>
                         <Route path="/registration" component={Registration} />
                         <Route
-                            path="/events"
+                            path="/"
                             render={() => (
                                 <React.Fragment>
                                     <div onClick={this.handleClickLogin}>

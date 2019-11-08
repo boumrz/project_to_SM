@@ -2,14 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9212515d-424b-4f2d-b8c3-64a8049c6d34" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/assets/images/Logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/assets/images/Pattern-1-copy-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/assets/images/background-head.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/assets/images/Layer-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/footer/Footer.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/footer/Layer-5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/footer/footer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/main/Block.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/main/Main.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/main/MainInfo.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/main/assets/img/1-discount.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/main/assets/img/1-event.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/main/assets/img/2-discount.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/main/assets/img/2-event.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/main/assets/img/3-discount.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/main/assets/img/3-event.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/main/assets/img/4-discount.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/main/assets/img/5-discount.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/main/assets/img/6-discount.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/main/assets/img/img-news-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/main/assets/img/img-news-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/main/assets/img/img-news-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/main/assets/img/img-news-4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/main/assets/img/imgbackground-news-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/main/block.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/main/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/events/Events.jsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/Button/Button.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/Button.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/registration/Registration.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/registration/Registration.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/registration.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/registration/registration.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,8 +43,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -37,7 +60,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editorconfig.notification" value="null" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/ui" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/events" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -52,12 +75,15 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Desktop\Project SM\project_to_SM\src\components\events" />
       <recent name="C:\Users\User\Desktop\Project SM\project_to_SM\src\components\ui" />
       <recent name="C:\Users\User\Desktop\Project SM\project_to_SM\src\components\assets\images" />
       <recent name="C:\Users\User\Desktop\Project SM\project_to_SM\src\style" />
       <recent name="C:\Users\User\Desktop\Project SM\project_to_SM\src\components\header" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Desktop\Project SM\project_to_SM\src\components\footer\assets\img" />
+      <recent name="C:\Users\User\Desktop\Project SM\project_to_SM\src\components\registration" />
       <recent name="C:\Users\User\Desktop\Project SM\project_to_SM\src\components\ui\Button" />
       <recent name="C:\Users\User\Desktop\Project SM\project_to_SM\src\components\header" />
       <recent name="C:\Users\User\Desktop\Project SM\project_to_SM\src\style" />
@@ -105,7 +131,7 @@
       <workItem from="1572155988099" duration="207000" />
       <workItem from="1572158916217" duration="7586000" />
       <workItem from="1572249869166" duration="31186000" />
-      <workItem from="1573067000993" duration="5838000" />
+      <workItem from="1573067000993" duration="21186000" />
     </task>
     <servers />
   </component>

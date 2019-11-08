@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../style/registration.css'
+import './registration.css'
 import {reduxForm, Field} from 'redux-form'
 import {Provider} from 'react-redux'
 import store from "../../redux/redux-store";

@@ -3,10 +3,11 @@ import { BrowserRouter, Route, Redirect, Switch } from "react-router-dom";
 
 // import Header from './components/header/Header'
 import Registration from "../src/components/registration/Registration";
-import Events from "./components/events/Events";
+import Main from "./components/main/Main";
 import Login from "./components/login/Login";
 
 import './App.css';
+import MainInfo from "./components/main/MainInfo";
 
 class App extends React.Component {
     render() {
@@ -14,10 +15,11 @@ class App extends React.Component {
             <BrowserRouter>
                 <Switch>
                     {/*<Route exact path="/registration" component={Registration}/>*/}
-                    <Route exact path="/events" component={Events}/>
+                    <Route exact path="/" component={Main}/>
+                    <Route exact path="/info" component={MainInfo}/>
                     <Route exact path="/login" component={Login}/>
                     <Route exact path="/registration" component={Registration}/>
-                    <Redirect to="/events"/>
+                    <Redirect to="/"/>
                 </Switch>
             </BrowserRouter>
         )
