@@ -1,6 +1,6 @@
 import React from 'react'
 import Header from "../header/Header";
-import Block from "./Block";
+import Block from "../block/Block";
 import { Link } from "react-router-dom";
 import './main.css';
 import first from './assets/img/1-event.png';
@@ -21,25 +21,26 @@ export default class Main extends React.Component {
     render() {
         return(
             <div className="main-container">
+                <div className="up">
                 <Header/>
 
                 <h1 className="main-h1">БЛИЖАЙШИЕ МЕРОПРИЯТИЯ</h1>
                 <div className="up-events">
-                    <Link to="/info">
+                    <Link to="/event_info">
                         {" "}
                         <Block
                             src={first}
                             p="Детский лагерь Smart Camp"
                         />{" "}
                     </Link>
-                    <Link to="/info">
+                    <Link to="/event_info">
                         {" "}
                         <Block
                             src={second}
                             p="Молодёжный оздоровительный лагерь 'Ямал'"
                         />
                     </Link>
-                    <Link to="/info">
+                    <Link to="/event_info">
                         {" "}
                         <Block
                             src={third}
@@ -94,7 +95,7 @@ export default class Main extends React.Component {
                         </div>
                     </div>
                 </div>
-
+</div>
                 <Footer/>
             </div>
         );

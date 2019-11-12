@@ -1,8 +1,13 @@
 .footer-container {
     background-image: url("../assets/images/footer.jpg");
-    margin-left: -2em;
-    margin-top: -1.3em;
     height: 8.5em;
+    min-height: 10vh;
+   
+  
+
+padding: 20px 0;
+background-repeat: no-repeat;
+background-size: cover;
 }
 
 footer img {
