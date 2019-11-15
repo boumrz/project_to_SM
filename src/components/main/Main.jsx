@@ -30,7 +30,8 @@ export default class Main extends React.Component {
                         <Block
                             src={first}
                             p="Детский лагерь Smart Camp"
-                        />{" "}
+                        />
+                        {" "}
                     </Link>
                     <Link to="/info">
                         {" "}
