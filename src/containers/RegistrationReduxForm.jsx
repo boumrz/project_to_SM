@@ -1,10 +1,10 @@
 import React from 'react'
-import './registration.css'
+import './registration.scss'
 import {reduxForm, Field} from 'redux-form'
 import {Provider} from 'react-redux'
-import store from "../../redux/redux-store";
-import {Input} from '../common/FormsControls/FormsControls';
-import {requiredField, validatePasswordCreator} from '../utils/validators/validators';
+import store from "../store/configureStore";
+import {Input} from './common/FormsControls/FormsControls';
+import {requiredField, validatePasswordCreator} from './utils/validators/validators';
 
 const validatePassCreator = validatePasswordCreator(8);
 

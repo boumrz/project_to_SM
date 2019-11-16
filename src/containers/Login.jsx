@@ -1,11 +1,9 @@
 import React from 'react'
-// import store from "../../redux/redux-store";
 import {reduxForm, Field} from 'redux-form'
-import store from "../../redux/redux-store";
-// import { configureStore } from 'redux-mock-store';
+import store from "../redux/redux-store";
 import {Provider} from 'react-redux'
-import {requiredField, validatePasswordCreator} from '../utils/validators/validators';
-import {Input} from '../common/FormsControls/FormsControls'
+import {requiredField, validatePasswordCreator} from './utils/validators/validators';
+import {Input} from './common/FormsControls/FormsControls'
 
 const validatePassCreator = validatePasswordCreator(8);
 

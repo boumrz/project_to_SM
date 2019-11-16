@@ -1,8 +1,8 @@
 import React from 'react';
-import './header.css';
+import './header.scss';
 import Logo from '../../components/assets/images/Logo.png'
 import { Link } from 'react-router-dom';
-import Registration from "../registration/Registration";
+import Registration from "../../containers/RegistrationReduxForm";
 import {Route, Switch, withRouter } from 'react-router-dom';
 
 class Header extends React.Component {
@@ -25,9 +25,9 @@ class Header extends React.Component {
                 <Link to="/">
                     <img src={Logo} className="Img"  alt="logo"/>
                 </Link>
-                <Link to='/camp'> <div className="header_li li"> НОВОСТИ </div>  </Link>
+                <Link to='/news'> <div className="header_li li"> НОВОСТИ </div>  </Link>
                 <Link to='/events'>  <div className="header_li li"> МЕРОПРИЯТИЯ </div> </Link>
-                <Link to='/FAQ'>  <div className="header_li li"> СКИДКИ </div> </Link>
+                <Link to='/sale'>  <div className="header_li li"> СКИДКИ </div> </Link>
                 <div className="button-container">
                     <Switch>
                         <Route path="/registration" component={Registration} />
