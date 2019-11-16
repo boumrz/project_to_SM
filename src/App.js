@@ -4,7 +4,7 @@ import { BrowserRouter, Route, Redirect, Switch } from "react-router-dom";
 // import Header from './components/header/Header'
 import Registration from "../src/containers/RegistrationReduxForm";
 import Main from "./components/main/Main";
-import Login from "./containers/Login";
+import Login from "./containers/RegistrationReduxForm";
 import Events from "./components/events/events";
 import Sale from "./components/pageSale/sale";
 import News from "./components/pageNews/news"

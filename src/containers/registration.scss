@@ -4,40 +4,22 @@
 
 * {
     font-family: "Montserrat", sans-serif;
-    /*overflow: hidden;*/
     outline: none;
 }
-@media screen {
     .form-container {
         margin-top: 1em;
     }
 
-    .black_overlay {
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 110vh; /*относительные единицы измерения*/
-        background-color: black;
-        z-index: 1001;
-        opacity: 0.7;
-
-    }
     .envelope {
         top: 0.5em;
-        right: 32vw;
+        right: 25%;
         display: block;
-        width: 35%;
-        /*height: 95vh;*/
-        z-index: 1002;
-        position: absolute;
+        width: 50%;
         margin: 0 auto;
         background-color: white;
         border-radius: 5%;
         text-align: center;
         min-width: 400px;
-
     }
 
     .envelope input {
@@ -50,11 +32,6 @@
         font-size: 0.8em;
     }
 
-    .envelope .consent { /*дочерний селектор*/
-        width: auto;
-        text-align: left;
-        color: black;
-    }
     label {
         font-size: 0.8em;
         display: inline;
@@ -80,85 +57,13 @@
         color: black;
     }
 
-    .FormButtonRight {
-        height: 2.2em;
-        width: 50%;
-        border: 0;
-        background-color: #00BCD4;/*hex*/
-        padding-top: 3%;
-        font-size: 1.3em;
-        float: left;
-        border-top-right-radius: 1em;
-        color: white;
-        font-size: 110%;
-    }
-
-    .FormButtonLeft {
-        height: 2.2em;
-        width: 50%;
-        border: 0;
-        background-color: #00BCD4;
-        padding-top: 3%;
-        font-size: 1.3em;
-        float: left;
-        border-top-left-radius: 1em;
-        color: white;
-        font-size: 110%;
-    }
-
-    .FormButtonLeft:hover {/*псевдокласс*/
-        background-color: white;
-        color: black;
-    }
-
-    .FormButtonRight:hover {
-        background-color: white;
-        color: black;
-    }
-
-    #btn {
-        background-color: #00BCD4;
-        color: white;
-        font-size: 1em;
-        height: 2em;
-        border: 0px;
-        margin-bottom: 3%;
-    }
-
-    .form-group {
-        position: relative;
-    }
-    .form-group .fa {
-        position: absolute;
-        margin: 1em;
-        left: 2em;
-
-        color: #999;
-    }
+#consent{
+    padding-left: 2%;
 }
 
-@media (min-width: 0px) and (max-width: 768px) {/*медиа запросс*/
-    .envelope {
-        width: 100%;
-        height: auto;
-        z-index: 1002;
-        position: relative;
-        background-color: white;
-        border-radius: 5%;
-        text-align: center;
-        min-width: 276px;
-    }
-    .envelope input {
-        border-radius: 1em;
-        width: 70%;
-        height: 1.5em;
-        margin: 0.5em;
-        display: inline-block;
-        padding-left: 1.5em;
-        font-size: 0.8em;
-    }
-
-    .FormHeader {
-        font-size: 0.8em;
-    }
+#btn{
+    font-size: 13pt;
+    border-radius: 30px;
+    border: 1px solid 
+    #c9c9c9;
 }
