@@ -2,7 +2,7 @@ import React from 'react'
 import Header from "../header/Header";
 import Block from "../block/Block";
 import { Link } from "react-router-dom";
-import './main.css';
+import './main.scss';
 import first from './assets/img/1-event.png';
 import second from './assets/img/2-event.png';
 import third from './assets/img/3-event.png';
@@ -31,8 +31,7 @@ export default class Main extends React.Component {
                         <Block
                             src={first}
                             p="Детский лагерь Smart Camp"
-                        />
-                        {" "}
+                        />{" "}
                     </Link>
                     <Link to="/event_info">
                         {" "}

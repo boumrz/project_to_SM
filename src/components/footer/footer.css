@@ -2,8 +2,10 @@
     position: relative;
     background-image: url("../assets/images/footer.jpg");
     margin-left: -2em;
-    margin-top: -1.3em;
     height: 8.5em;
+    padding: 20px 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 footer .logo img {
