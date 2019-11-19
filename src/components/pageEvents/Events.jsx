@@ -7,6 +7,7 @@ import Footer from "../footer/Footer";
 import first from '../pageMain/assets/img/1-event.png';
 import second from '../pageMain/assets/img/2-event.png';
 import third from '../pageMain/assets/img/3-event.png';
+import AddEvent from "./AddEvent";
 
 export default class Events extends React.Component {
     render() {
@@ -37,7 +38,7 @@ export default class Events extends React.Component {
                 </div>
                 <div className="archive-category-title">  Спорт </div>
                 </Link>
-	        
+
     </div>
                 <div className="up-events">
                     <Link to="/event_info">
@@ -63,8 +64,9 @@ export default class Events extends React.Component {
                     </Link>
                 </div>
 
-            </div>
+                <AddEvent/>
 
+            </div>
                 <Footer/>
             </div>
         );
@@ -73,4 +75,4 @@ export default class Events extends React.Component {
 
 
 
-    
+

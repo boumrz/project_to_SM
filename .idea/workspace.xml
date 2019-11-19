@@ -2,7 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9212515d-424b-4f2d-b8c3-64a8049c6d34" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/addEventsPage/AddEventsPage.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/addEventsPage/addEventsPage.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pageEvents/AddEvent.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pageEvents/addEvent.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/main/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pageEvents/events.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pageEvents/Events.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/login.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,6 +53,7 @@
     <property name="node.js.selected.package.standard" value="" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\User\Desktop\Project SM\project_to_SM\node_modules\prettier" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -104,7 +116,7 @@
       <workItem from="1573067000993" duration="21281000" />
       <workItem from="1573847763007" duration="5383000" />
       <workItem from="1574113762704" duration="660000" />
-      <workItem from="1574195575515" duration="2042000" />
+      <workItem from="1574195575515" duration="8049000" />
     </task>
     <servers />
   </component>
