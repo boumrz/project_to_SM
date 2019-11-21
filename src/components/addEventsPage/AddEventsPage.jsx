@@ -1,5 +1,8 @@
 import React from 'react';
-import {Field, reduxForm} from 'redux-form';
+import {Field} from 'redux-form';
+import {Input} from '../myForm/FormsControls/FormsControls'
+import {requiredField} from '../myForm/validators/validators'
+import {Select} from './Select'
 import './addEventsPage.css';
 
 class AddEventsPage extends React.Component {
@@ -9,61 +12,68 @@ class AddEventsPage extends React.Component {
         return(
             <div className="form-add-events-container">
                 <form onSubmit={handleSubmit}>
-                    <div>
+                    <div aria-hidden="true">
                         <Field
-                            name="title-event"
-                            component="input"
+                            name="title"
+                            component={Input}
                             type="text"
                             placeholder="Название мероприятия"
+                            validate={[requiredField]}
                         />
                     </div>
-                    <div>
+                    <div aria-hidden="true">
                         <Field
                             name="category"
-                            component="input"
-                            type="text"
+                            component={Select}
                             placeholder="Категория"
+                            validate={[requiredField]}
                         />
                     </div>
-                    <div>
+                    <div aria-hidden="true">
                         <Field
-                            name="sale-to-event"
-                            component="input"
+                            name="sale"
+                            component={Input}
                             type="text"
-                            placeholder="Скидка по мероприятию"
+                            placeholder="Скидка для студентов"
+                            validate={[requiredField]}
                         />
                     </div>
-                    <div>
+                    <div aria-hidden="true">
                         <Field
                             name="date"
-                            component="input"
+                            component={Input}
                             type="date"
                             placeholder="Дата мероприятия"
+                            validate={[requiredField]}
                         />
                     </div>
-                    <div>
+                    <div aria-hidden="true">
                         <Field
                             name="phone"
-                            component="input"
+                            component={Input}
                             type="text"
                             placeholder="Номер телефона"
+                            validate={[requiredField]}
                         />
                     </div>
-                    <div>
+                    <div aria-hidden="true">
                         <Field
                             name="address"
-                            component="input"
+                            component={Input}
                             type="text"
                             placeholder="Адрес"
+                            validate={[requiredField]}
                         />
                     </div>
-                    <div>
+                    <div aria-hidden="true">
                         <Field
                             name="price"
-                            component="input"
+                            component={Input}
                             type="text"
                             placeholder="Цена"
+                            validate={[requiredField]}
                         />
+                        <input id="btn" type="submit" value="Создать мероприятие"/>
                     </div>
                 </form>
             </div>
@@ -71,8 +81,6 @@ class AddEventsPage extends React.Component {
     }
 }
 
-AddEventsPage = reduxForm ({
-   form: 'event',
-}) (AddEventsPage);
+
 
 export default AddEventsPage;

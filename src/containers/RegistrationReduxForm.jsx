@@ -1,9 +1,9 @@
 import React from 'react'
 import './registration.scss'
 import {reduxForm} from 'redux-form'
-import RegistrationFormStudents from '../components/registration/formStudents'
-import RegistrationFormOrganization from '../components/registration/formOrganization'
-import { Category} from '../components/registration/category_selection'
+import RegistrationFormStudents from '../components/myForm/formStudents'
+import RegistrationFormOrganization from '../components/myForm/formOrganization'
+import { Category} from '../components/myForm/category_selection'
 import {setCategory} from '../actions/categoryActions'
 import { connect } from 'react-redux'
 

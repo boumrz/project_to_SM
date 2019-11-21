@@ -1,6 +1,6 @@
 import React from 'react'
 import {reduxForm} from 'redux-form'
-import loginForm from '../components/registration/loginForm'
+import loginForm from '../components/myForm/loginForm'
 
 const LoginFormRedux = reduxForm({form: 'login'})(loginForm);
 

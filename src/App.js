@@ -8,7 +8,7 @@ import Sale from "./components/pageSale/sale";
 import News from "./components/pageNews/news"
 import './App.css';
 import MainInfo from "./components/main/MainInfo";
-import AddEventsPage from "./components/addEventsPage/AddEventsPage";
+import AddEventsPage from "./containers/addEvent";
 
 class App extends React.Component {
     render() {
