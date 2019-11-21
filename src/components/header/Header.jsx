@@ -25,9 +25,9 @@ class Header extends React.Component {
                 <Link to="/">
                     <img src={Logo} className="Img"  alt="logo"/>
                 </Link>
-                <Link to='/news'> <div className="header_li li"> НОВОСТИ </div>  </Link>
-                <Link to='/events'>  <div className="header_li li"> МЕРОПРИЯТИЯ </div> </Link>
-                <Link to='/sale'>  <div className="header_li li"> СКИДКИ </div> </Link>
+                <Link to="/news"> <div className="header_li li"> НОВОСТИ </div>  </Link>
+                <Link to="/events">  <div className="header_li li"> МЕРОПРИЯТИЯ </div> </Link>
+                <Link to="/sale">  <div className="header_li li"> СКИДКИ </div> </Link>
                 <div className="button-container">
                     <Switch>
                         <Route path="/registration" component={Registration} />
