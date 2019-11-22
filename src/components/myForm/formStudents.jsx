@@ -5,10 +5,9 @@ import {requiredField, validatePasswordCreator} from './validators/validators'
 
 const validatePassCreator = validatePasswordCreator(8);
 
-
 export default class RegistrationFormStudents extends React.Component {
   render() {
-   
+
     return (
         <form onSubmit={this.props.handleSubmit}>
             <div className="form-container">
@@ -69,7 +68,7 @@ export default class RegistrationFormStudents extends React.Component {
                         name="university"
                         placeholder="ВУЗ"
                         component={Input}
-                        
+
                     />
                 </div>
                 <div className="form-group">
@@ -82,7 +81,7 @@ export default class RegistrationFormStudents extends React.Component {
                         min="2000"
                         max="2030"
                         component={Input}
-                       
+
                     />
                 </div>
                 <div className="form-group ">
@@ -93,7 +92,7 @@ export default class RegistrationFormStudents extends React.Component {
                         name="phone"
                         placeholder="Телефон"
                         component={Input}
-                        
+
                     />
                 </div>
                 <div className="form-group ">

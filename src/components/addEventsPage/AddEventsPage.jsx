@@ -6,12 +6,12 @@ import {Select} from './Select'
 import './addEventsPage.css';
 
 class AddEventsPage extends React.Component {
+
     render() {
-        const {handleSubmit} = this.props;
 
         return(
             <div className="form-add-events-container">
-                <form onSubmit={handleSubmit}>
+                <form onSubmit={this.props.submit} method="post">
                     <div aria-hidden="true">
                         <Field
                             name="title"
@@ -80,7 +80,5 @@ class AddEventsPage extends React.Component {
         );
     }
 }
-
-
 
 export default AddEventsPage;
