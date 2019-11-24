@@ -4,6 +4,8 @@ import {Input} from '../myForm/FormsControls/FormsControls'
 import {requiredField} from '../myForm/validators/validators'
 import './addEventsPage.css';
 
+
+
 class AddEventsPage extends React.Component {
 
     render() {
@@ -23,9 +25,31 @@ class AddEventsPage extends React.Component {
                     </div>
                     <div aria-hidden="true">
                         <Field
+                            name="organizer"
+                            component={Input}
+                            type="text"
+                            placeholder="Организатор"
+                            validate={[requiredField]}
+                           
+                        />
+                    </div>
+
+                    <div aria-hidden="true">
+                        <Field
+                            name="link"
+                            component={Input}
+                            type="text"
+                            placeholder="Ссылка на афишу"
+                            validate={[requiredField]}
+                           
+                        />
+                    </div>
+              
+                    <div aria-hidden="true">
+                    <label> Категория: </label>
+                        <Field
                         name="category"
                         component= "select"
-                        placeholder="Категория"
                         validate={[requiredField]}>
                             <option value="volunteer">Волонтёрство </option>
                             <option value="culture">Культура</option> 
@@ -34,16 +58,7 @@ class AddEventsPage extends React.Component {
                             <option value="sport">Спорт</option> 
                         </Field>
                     </div>
-                    <div aria-hidden="true">
-                        <Field
-                            name="sale"
-                            component={Input}
-                            type="text"
-                            placeholder="Скидка для студентов"
-                            validate={[requiredField]}
-                            value="10"
-                        />
-                    </div>
+ 
                     <div aria-hidden="true">
                         <Field
                             name="date"
@@ -55,14 +70,7 @@ class AddEventsPage extends React.Component {
                         />
                     </div>
                     <div aria-hidden="true">
-                        <Field
-                            name="phone"
-                            component={Input}
-                            type="text"
-                            placeholder="Номер телефона"
-                            validate={[requiredField]}
-                            value="88005553555"
-                        />
+                
                     </div>
                     <div aria-hidden="true">
                         <Field
@@ -74,17 +82,53 @@ class AddEventsPage extends React.Component {
                             value="Красная Пресня дом 4"
                         />
                     </div>
+                    <label>Время начала мероприятия</label>
                     <div aria-hidden="true">
+                        <Field
+                            name="time"
+                            component={Input}
+                            type="time"
+                            placeholder="Время начала мероприятия:"
+                            validate={[requiredField]}
+                    
+                        />
+                    </div>
+                    
+                    <div aria-hidden="true">
+                        <Field
+                            name="description"
+                            component={Input}
+                            type="text"
+                            placeholder="краткое описание мероприятия"
+                            validate={[requiredField]}
+                            
+                        />
+                    </div>
                         <Field
                             name="price"
                             component={Input}
                             type="text"
                             placeholder="Цена"
                             validate={[requiredField]}
-                            value="100"
+                            
                         />
-                        <input id="btn" type="submit" value="Создать мероприятие"/>
+                        
+                        <div aria-hidden="true">
+                        <Field
+                            name="sale"
+                            component={Input}
+                            type="text"
+                            placeholder="Скидка для студентов"
+                            validate={[requiredField]}
+                            
+                        />
                     </div>
+                        
+                        <input id="btn" type="submit" value="Создать мероприятие"/>
+                    
+                        
+                    
+                    
                 </form>
             </div>
         );

@@ -4,13 +4,18 @@ import Block from "../blockEvent/BlockEvent";
 import { Link } from "react-router-dom";
 import './events.scss';
 import Footer from "../footer/Footer";
-import first from '../pageMain/assets/img/1-event.png';
-import second from '../pageMain/assets/img/2-event.png';
-import third from '../pageMain/assets/img/3-event.png';
 import AddEvent from "./AddEvent";
 
 export default class Events extends React.Component {
-    render() {
+
+    state = {events: []}
+
+    componentDidMount() {
+        fetch('/events')
+        .then(res => res.json())
+        .then(events => this.setState({ events }));
+    }
+        render() {
         return(
             <div className="">
                 <div className="main">
@@ -40,29 +45,24 @@ export default class Events extends React.Component {
                 </Link>
 
     </div>
-                <div className="up-events">
+    <div className="up-events">
+    {this.state.events.map(event =>
+ 
+           
                     <Link to="/event_info">
                         {" "}
                         <Block
-                            src={first}
-                            p="Детский лагерь Smart Camp"
+                            src={event.link}
+                            p={event.title}
+                            date={event.date}
                         />{" "}
                     </Link>
-                    <Link to="/event_info">
-                        {" "}
-                        <Block
-                            src={second}
-                            p="Молодёжный оздоровительный лагерь 'Ямал'"
-                        />
-                    </Link>
-                    <Link to="/event_info">
-                        {" "}
-                        <Block
-                            src={third}
-                            p="Международный молодежный центр I&Camp 2019 Республика Крым"
-                        />
-                    </Link>
-                </div>
+                   
+              
+        
+        )}
+
+        </div>   
 
                 <AddEvent/>
 

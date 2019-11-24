@@ -6,14 +6,14 @@ import AddEventsPage from "../addEventsPage/AddEventsPage";
 class AddEvent extends React.Component {
 
     handleChangeAddEvents = () => {
-        this.props.history.push('/events-add');
+        this.props.history.push('/events_add');
     };
 
     render() {
         return(
             <div className="button-container">
                 <Switch>
-                    <Route path="/events-add" component={AddEventsPage} />
+                    <Route path="/events_add" component={AddEventsPage} />
                     <Route
                         path="/events"
                         render={() => (
