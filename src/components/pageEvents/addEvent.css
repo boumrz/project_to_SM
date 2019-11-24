@@ -1,12 +1,9 @@
-.button-container {
-    text-align: center;
-}
-
 .button-add-event {
     width: 12.5em;
     color: white;
     background: #fdc526;
     border: 1px solid #fdc526;
+    margin: 3% 0% 3% 50%;
 }
 
 .button-add-event:hover {
