@@ -7,18 +7,31 @@ import Footer from "../footer/Footer";
 import AddEvent from "./AddEvent";
 
 
-export default class Events extends React.Component {
 
-    state = {events: []}
+export default class Events extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state =  {
+            events: [],
+            type: "all",  
+        };
+    
+        this.chengeCategory = this.chengeCategory.bind(this);
+      }
+
 
     componentDidMount() {
         fetch('/events')
         .then(res => res.json())
-        .then(events => this.setState({ events }));
-
-        
+        .then(events => this.setState({ events })); 
     }
 
+    chengeCategory(){
+        console.log()
+        this.setState(state=>({
+            type: ""})
+        );
+    }
         render() {
         return(
             <div className="">
@@ -27,26 +40,26 @@ export default class Events extends React.Component {
 
                 <div class="site-container archive-categories-list">
 
-			<Link to="" class="archive-category">  <div class="archive-category-img volunteering">
+			<div className="archive-category" id="volunteer" onClick={() => this.chengeCategory()}>  <div class="archive-category-img volunteering" >
                 </div>
-                <div className="archive-category-title">  Волонтёрство </div>
-                </Link>
-	        <Link to="" className="archive-category">                <div className="archive-category-img culture">
+                <div className="archive-category-title" > Волонтёрство </div>
+                </div>
+	        <div   className="archive-category" id="culture">                <div className="archive-category-img culture" >
                 </div>
                 <div className="archive-category-title">  Культура </div>
-                </Link>
-	        <Link to="" className="archive-category">                <div className="archive-category-img education">
+                </div>
+	        <div   className="archive-category" id="education" >                <div className="archive-category-img education">
              </div>
                 <div className="archive-category-title">  Образование </div>
-                </Link>
-	           <Link to="" className="archive-category">                <div className="archive-category-img entertainment" >
+                </div>
+	           <div   className="archive-category" id="entertainment">                <div className="archive-category-img entertainment" >
                 </div>
                 <div className="archive-category-title">  Развлечения </div>
-                </Link>
-	        <Link to="" className="archive-category">                <div className="archive-category-img sport" >
+                </div>
+	        <div   className="archive-category" id="sport">                <div className="archive-category-img sport" >
                 </div>
                 <div className="archive-category-title">  Спорт </div>
-                </Link>
+                </div>
 
     </div>
     <div className="up-events">

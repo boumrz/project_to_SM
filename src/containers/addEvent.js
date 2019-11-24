@@ -17,12 +17,9 @@ export default class Event extends React.Component {
                   
                   } else {
                     resolve(res.data);
-                    
-                  }
+                    }
                 })
-                .catch(() => {
-                  alert("ERROR");
-                })
+
             });
 
         return (

@@ -12,7 +12,7 @@ footer .logo img {
     height: 2.5em;
     padding-top: 2.5em;
     padding-bottom: 1.5em;
-    padding-left: 19.8em;
+    padding-left: 10em;
 }
 
 .footer-container h1 {
@@ -21,14 +21,14 @@ footer .logo img {
     color: white;
     max-width: 1em;
     text-align: center;
-    padding-left: 25em;
+    padding-left: 13em;
     margin-top: -1em;
 }
 
 .social-networks {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 47%;
 }
 
 .social-networks img {

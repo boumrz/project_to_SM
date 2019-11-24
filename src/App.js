@@ -6,6 +6,7 @@ import Login from "./containers/login";
 import Events from "./components/pageEvents/events";
 import Sale from "./components/pageSale/sale";
 import News from "./components/pageNews/news"
+import pageInfo from "./components/pageInfo/pageInfo"
 import './App.css';
 import MainInfo from "./components/main/MainInfo";
 import AddEventsPage from "./containers/addEvent";
@@ -24,6 +25,7 @@ class App extends React.Component {
                     <Route exact path="/news" component={News}/>
                     <Route exact path="/registration" component={Registration}/>
                     <Route exact path="/events/events_add"/>
+                    <Route exact path="/info" component={pageInfo}/>
                     <Redirect to="/"/>
                 </Switch>
             </BrowserRouter>
