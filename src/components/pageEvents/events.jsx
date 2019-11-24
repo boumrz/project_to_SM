@@ -6,6 +6,7 @@ import './events.scss';
 import Footer from "../footer/Footer";
 import AddEvent from "./AddEvent";
 
+
 export default class Events extends React.Component {
 
     state = {events: []}
@@ -14,7 +15,10 @@ export default class Events extends React.Component {
         fetch('/events')
         .then(res => res.json())
         .then(events => this.setState({ events }));
+
+        
     }
+
         render() {
         return(
             <div className="">
@@ -47,8 +51,7 @@ export default class Events extends React.Component {
     </div>
     <div className="up-events">
     {this.state.events.map(event =>
- 
-           
+                               
                     <Link to="/event_info">
                         {" "}
                         <Block
@@ -56,9 +59,7 @@ export default class Events extends React.Component {
                             p={event.title}
                             date={event.date}
                         />{" "}
-                    </Link>
-                   
-              
+                    </Link>  
         
         )}
 
