@@ -2,33 +2,37 @@ import React from 'react';
 import {Field} from 'redux-form';
 import {Input} from '../myForm/FormsControls/FormsControls'
 import {requiredField} from '../myForm/validators/validators'
-import {Select} from './Select'
 import './addEventsPage.css';
 
 class AddEventsPage extends React.Component {
-    render(props) {
-      
+
+    render() {
+
         return(
             <div className="form-add-events-container">
-                <form onSubmit={this.props.onSubmit} method="post">
+                <form onSubmit={this.props.submit} method="post">
                     <div aria-hidden="true">
                         <Field
                             name="title"
                             component={Input}
                             type="text"
                             placeholder="Название мероприятия"
-                            value="fdssf"
                             validate={[requiredField]}
+                           
                         />
                     </div>
                     <div aria-hidden="true">
                         <Field
-                            name="category"
-                            component={Select}
-                            placeholder="Категория"
-                            value="fdssf"
-                            validate={[requiredField]}
-                        />
+                        name="category"
+                        component= "select"
+                        placeholder="Категория"
+                        validate={[requiredField]}>
+                            <option value="volunteer">Волонтёрство </option>
+                            <option value="culture">Культура</option> 
+                            <option value="education">Образование</option> 
+                            <option value="entertainment">Развлечения</option> 
+                            <option value="sport">Спорт</option> 
+                        </Field>
                     </div>
                     <div aria-hidden="true">
                         <Field
@@ -36,8 +40,8 @@ class AddEventsPage extends React.Component {
                             component={Input}
                             type="text"
                             placeholder="Скидка для студентов"
-                            value="fdssf"
                             validate={[requiredField]}
+                            value="10"
                         />
                     </div>
                     <div aria-hidden="true">
@@ -46,8 +50,8 @@ class AddEventsPage extends React.Component {
                             component={Input}
                             type="date"
                             placeholder="Дата мероприятия"
-                            value="fdssf"
                             validate={[requiredField]}
+                            value="10.12.2019"
                         />
                     </div>
                     <div aria-hidden="true">
@@ -56,8 +60,8 @@ class AddEventsPage extends React.Component {
                             component={Input}
                             type="text"
                             placeholder="Номер телефона"
-                            value="fdssf"
                             validate={[requiredField]}
+                            value="88005553555"
                         />
                     </div>
                     <div aria-hidden="true">
@@ -66,8 +70,8 @@ class AddEventsPage extends React.Component {
                             component={Input}
                             type="text"
                             placeholder="Адрес"
-                            value="fdssf"
                             validate={[requiredField]}
+                            value="Красная Пресня дом 4"
                         />
                     </div>
                     <div aria-hidden="true">
@@ -76,8 +80,8 @@ class AddEventsPage extends React.Component {
                             component={Input}
                             type="text"
                             placeholder="Цена"
-                            value="fdssf"
                             validate={[requiredField]}
+                            value="100"
                         />
                         <input id="btn" type="submit" value="Создать мероприятие"/>
                     </div>
@@ -86,7 +90,5 @@ class AddEventsPage extends React.Component {
         );
     }
 }
-
-
 
 export default AddEventsPage;
