@@ -5,31 +5,16 @@ import { Link } from 'react-router-dom'
 import Footer from '../components/footer/Footer'
 import AddEvent from '../components/pageEvents/AddEvent'
 import '../components/pageEvents/events.scss'
+import { connect } from 'react-redux'
+import { setCategoryEvents, getEvents } from '../actions/eventsAction'
 
-export default class Events extends React.Component {
-  constructor (props) {
-    super(props)
-    this.state = {
-      events: [],
-      type: 'all'
+class Events extends React.Component {
+  render () {
+    const { events, event, getEvents } = this.props
+    if (events.isFetching === false && events.events == 0) {
+      getEvents()
     }
 
-    this.changeCategory = this.chengeCategory.bind(this)
-  }
-
-  componentDidMount () {
-    fetch('/events')
-      .then(res => res.json())
-      .then(events => this.setState({ events }))
-  }
-
-  chengeCategory (category) {
-    this.setState(state => ({
-      type: category
-    }))
-  }
-
-  render () {
     return (
       <div className="">
         <div className="main">
@@ -41,36 +26,64 @@ export default class Events extends React.Component {
               id="volunteer"
               onClick={() => {
                 const category = 'volunteer'
-                return this.changeCategory(category)
+                return this.props.setCategoryEvents(category)
               }}
             >
               {' '}
               <div class="archive-category-img volunteering"></div>
               <div className="archive-category-title"> Волонтёрство </div>
             </div>
-            <div className="archive-category" id="culture">
+            <div
+              className="archive-category"
+              id="culture"
+              onClick={() => {
+                const category = 'culture'
+                return this.props.setCategoryEvents(category)
+              }}
+            >
               {' '}
               <div className="archive-category-img culture"></div>
               <div className="archive-category-title"> Культура </div>
             </div>
-            <div className="archive-category" id="education">
+            <div
+              className="archive-category"
+              id="education"
+              onClick={() => {
+                const category = 'education'
+                return this.props.setCategoryEvents(category)
+              }}
+            >
               {' '}
               <div className="archive-category-img education"></div>
               <div className="archive-category-title"> Образование </div>
             </div>
-            <div className="archive-category" id="entertainment">
+            <div
+              className="archive-category"
+              id="entertainment"
+              onClick={() => {
+                const category = 'entertainment'
+                return this.props.setCategoryEvents(category)
+              }}
+            >
               {' '}
               <div className="archive-category-img entertainment"></div>
               <div className="archive-category-title"> Развлечения </div>
             </div>
-            <div className="archive-category" id="sport">
+            <div
+              className="archive-category"
+              id="sport"
+              onClick={() => {
+                const category = 'sport'
+                return this.props.setCategoryEvents(category)
+              }}
+            >
               {' '}
               <div className="archive-category-img sport"></div>
               <div className="archive-category-title"> Спорт </div>
             </div>
           </div>
           <div className="up-events">
-            {this.state.events.map(event => (
+            {events.events.map(event => (
               <Link to="/event_info">
                 {' '}
                 <Block
@@ -89,3 +102,20 @@ export default class Events extends React.Component {
     )
   }
 }
+
+const mapStateToProps = store => {
+  return {
+    events: store.events,
+    event: store.event
+  }
+}
+
+const mapDispatchToProps = dispatch => {
+  return {
+    setCategoryEvents: eventsCategory =>
+      dispatch(setCategoryEvents(eventsCategory)),
+    getEvents: () => dispatch(getEvents())
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Events)
