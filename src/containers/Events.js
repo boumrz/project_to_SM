@@ -1,10 +1,10 @@
 import React from 'react'
-import Header from '../header/Header'
-import Block from '../blockEvent/BlockEvent'
+import Header from '../components/header/Header'
+import Block from '../components/blockEvent/BlockEvent'
 import { Link } from 'react-router-dom'
-import './events.scss'
-import Footer from '../footer/Footer'
-import AddEvent from './AddEvent'
+import Footer from '../components/footer/Footer'
+import AddEvent from '../components/pageEvents/AddEvent'
+import '../components/pageEvents/events.scss'
 
 export default class Events extends React.Component {
   constructor (props) {
@@ -23,10 +23,9 @@ export default class Events extends React.Component {
       .then(events => this.setState({ events }))
   }
 
-  chengeCategory () {
-    console.log()
+  chengeCategory (category) {
     this.setState(state => ({
-      type: ''
+      type: category
     }))
   }
 
@@ -40,7 +39,10 @@ export default class Events extends React.Component {
             <div
               className="archive-category"
               id="volunteer"
-              onClick={() => this.changeCategory()}
+              onClick={() => {
+                const category = 'volunteer'
+                return this.changeCategory(category)
+              }}
             >
               {' '}
               <div class="archive-category-img volunteering"></div>
