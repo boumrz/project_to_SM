@@ -1,12 +1,11 @@
 import React from 'react'
 import Header from '../components/header/Header'
-import Block from '../components/blockEvent/BlockEvent'
-import { Link } from 'react-router-dom'
 import Footer from '../components/footer/Footer'
 import AddEvent from '../components/pageEvents/AddEvent'
 import '../components/pageEvents/events.scss'
 import { connect } from 'react-redux'
 import { setCategoryEvents, getEvents } from '../actions/eventsAction'
+import Event from '../components/pageEvents/event'
 
 class Events extends React.Component {
   render () {
@@ -83,18 +82,8 @@ class Events extends React.Component {
             </div>
           </div>
           <div className="up-events">
-            {events.events.map(event => (
-              <Link to="/event_info">
-                {' '}
-                <Block
-                  src={event.link}
-                  p={event.title}
-                  date={event.date}
-                />{' '}
-              </Link>
-            ))}
+            <Event events={events} />
           </div>
-
           <AddEvent />
         </div>
         <Footer />
