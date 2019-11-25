@@ -1,10 +1,8 @@
-import React from "react";
-import "./Info.scss";
-
-
+import React from 'react'
+import './Info.scss'
 
 class Info extends React.Component {
-  render() {
+  render () {
     return (
       <div className="info">
         <h2 className="H2"> {this.props.title} </h2>
@@ -28,8 +26,8 @@ class Info extends React.Component {
           </div>
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default Info;
+export default Info

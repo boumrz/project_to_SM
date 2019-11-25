@@ -1,15 +1,15 @@
-import {SET_CATEGORY} from '../actions/categoryActions'
+import { SET_CATEGORY } from '../actions/categoryActions'
 
 const initialState = {
-    category: 'student' ,
+  category: 'student'
+}
+
+export function registrationReducer (state = initialState, action) {
+  switch (action.type) {
+    case SET_CATEGORY:
+      return { ...state, category: action.payload }
+
+    default:
+      return state
   }
-  
-  export function registrationReducer(state = initialState, action) {
-    switch (action.type) {
-      case SET_CATEGORY:
-        return { ...state, category: action.payload }
-  
-      default:
-        return state
-    }
-  }
+}
