@@ -27,8 +27,10 @@ class Info extends React.Component {
               <p> {event.price}</p>
               <h3>Описание мероприятия</h3>
               <p> {event.description}</p>
+              <Link to="change_event">
+                <button className="btn_see1">Изменить</button>
+              </Link>
 
-              <button className="btn_see1">Изменить</button>
               <Link
                 to={link}
                 onClick={() => {

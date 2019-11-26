@@ -9,6 +9,7 @@ import News from './components/pageNews/news'
 import pageInfo from './containers/EventInfo'
 import './App.css'
 import AddEventsPage from './containers/addEvent'
+import changeEvent from './containers/changeEvent'
 
 class App extends React.Component {
   render () {
@@ -25,6 +26,8 @@ class App extends React.Component {
           <Route exact path="/events/events_add" />
           <Route exact path="/event_info" component={pageInfo} />
           <Route path="/delete/" />
+          <Route exact path="/event/change_event" />
+          <Route exact path="/change_event" component={changeEvent} />
           <Redirect to="/" />
         </Switch>
       </BrowserRouter>
