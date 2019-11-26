@@ -26,6 +26,7 @@ export default class Event extends React.Component {
       <div className="main-container">
         <div id="envelope" className="envelope">
           <b> Добавить мероприятие </b>
+
           <AddEventsPage onSubmit={submit} />
         </div>
       </div>

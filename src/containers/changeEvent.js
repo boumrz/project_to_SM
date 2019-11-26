@@ -1,17 +1,17 @@
 import React from 'react'
 import { reduxForm } from 'redux-form'
-import addEventsPage from '../components/addEventsPage/ChangeEvent'
+import changeEventsPage from '../components/addEventsPage/ChangeEvent'
 import { connect } from 'react-redux'
 
-const AddEventsPage = reduxForm({ form: 'eventChange' })(addEventsPage)
+const ChangeEventsPage = reduxForm({ form: 'eventChange' })(changeEventsPage)
 
-class Event extends React.Component {
+class eventChange extends React.Component {
   render () {
-    const submit = (formData) =>
+    const submit = formData =>
       new Promise((resolve, reject) => {
-        fetch('event/change_event', {
+        fetch('/events/change_event', {
           method: 'put',
-          body: JSON.stringify({ formData: formData})
+          body: JSON.stringify(formData)
         })
           .then(res => res.json())
           .then(res => {
@@ -27,7 +27,8 @@ class Event extends React.Component {
       <div className="main-container">
         <div id="envelope" className="envelope">
           <b> Обновить мероприятие </b>
-          <AddEventsPage onSubmit={submit} id={this.props.events.event.id} />
+
+          <ChangeEventsPage onSubmit={submit} id={this.props.events.event.id} />
         </div>
       </div>
     )
@@ -40,4 +41,4 @@ const mapStateToProps = store => {
   }
 }
 
-export default connect(mapStateToProps)(Event)
+export default connect(mapStateToProps)(eventChange)

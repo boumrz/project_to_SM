@@ -7,12 +7,12 @@ import { connect } from 'react-redux'
 import {
   setCategoryEvents,
   getEvents,
-  chooseEvent
+  chooseEvent,
 } from '../actions/eventsAction'
 import Event from '../components/pageEvents/event'
 
 class Events extends React.Component {
-  render () {
+  render() {
     const { events, getEvents, chooseEventAction } = this.props
     if (events.isFetching === false && events.events == 0) {
       getEvents()

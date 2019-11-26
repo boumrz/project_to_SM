@@ -3,9 +3,8 @@ import { Field } from 'redux-form'
 import { Input } from '../myForm/FormsControls/FormsControls'
 import { requiredField } from '../myForm/validators/validators'
 import './addEventsPage.css'
-import { Link } from 'react-router-dom'
 
-class AddEventsPage extends React.Component {
+class ChangeEvent extends React.Component {
   render () {
     return (
       <div className="form-add-events-container">
@@ -114,11 +113,11 @@ class AddEventsPage extends React.Component {
             />
           </div>
 
-          <input id="btn" type="submit" value="Отправить" />
+          <input type="submit" value="Отправить" onClick={this.props.submit}/>
         </form>
       </div>
     )
   }
 }
 
-export default AddEventsPage
+export default ChangeEvent

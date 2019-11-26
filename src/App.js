@@ -26,7 +26,7 @@ class App extends React.Component {
           <Route exact path="/events/events_add" />
           <Route exact path="/event_info" component={pageInfo} />
           <Route path="/delete/" />
-          <Route exact path="/event/change_event" />
+          <Route exact path="/events/change_event" />
           <Route exact path="/change_event" component={changeEvent} />
           <Redirect to="/" />
         </Switch>
