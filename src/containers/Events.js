@@ -4,12 +4,12 @@ import Footer from '../components/footer/Footer'
 import AddEvent from '../components/pageEvents/AddEvent'
 import '../components/pageEvents/events.scss'
 import { connect } from 'react-redux'
-import { setCategoryEvents, getEvents } from '../actions/eventsAction'
+import { setCategoryEvents, getEvents, chooseEvent } from '../actions/eventsAction'
 import Event from '../components/pageEvents/event'
 
 class Events extends React.Component {
   render () {
-    const { events, event, getEvents } = this.props
+    const { events, getEvents, chooseEventAction} = this.props
     if (events.isFetching === false && events.events == 0) {
       getEvents()
     }
@@ -82,7 +82,7 @@ class Events extends React.Component {
             </div>
           </div>
           <div className="up-events">
-            <Event events={events} />
+            <Event events={events} chooseEvent={chooseEventAction}/>
           </div>
           <AddEvent />
         </div>
@@ -94,8 +94,7 @@ class Events extends React.Component {
 
 const mapStateToProps = store => {
   return {
-    events: store.events,
-    event: store.event
+    events: store.events
   }
 }
 
@@ -103,7 +102,8 @@ const mapDispatchToProps = dispatch => {
   return {
     setCategoryEvents: eventsCategory =>
       dispatch(setCategoryEvents(eventsCategory)),
-    getEvents: () => dispatch(getEvents())
+    getEvents: () => dispatch(getEvents()),
+    chooseEventAction: event => dispatch(chooseEvent(event))
   }
 }
 

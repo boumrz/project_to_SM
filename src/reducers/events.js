@@ -1,13 +1,15 @@
 import {
   SET_CATEGORY_EVENTS,
   GET_EVENTS_REQUEST,
-  GET_EVENTS_SUCCESS
+  GET_EVENTS_SUCCESS,
+  CHOOSE_EVENT
 } from '../actions/eventsAction'
 
 export const initialState = {
   events: [],
   eventsCategory: 'all',
-  isFetching: false
+  isFetching: false,
+  event: []
 }
 
 export function eventsReducer (state = initialState, action) {
@@ -20,6 +22,9 @@ export function eventsReducer (state = initialState, action) {
 
     case GET_EVENTS_SUCCESS:
       return { ...state, events: action.payload, isFetching: false }
+
+    case CHOOSE_EVENT:
+      return { ...state, event: action.payload }
 
     default:
       return state
