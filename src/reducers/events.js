@@ -2,7 +2,8 @@ import {
   SET_CATEGORY_EVENTS,
   GET_EVENTS_REQUEST,
   GET_EVENTS_SUCCESS,
-  CHOOSE_EVENT
+  CHOOSE_EVENT,
+  DELETE_EVENT
 } from '../actions/eventsAction'
 
 export const initialState = {
@@ -25,6 +26,9 @@ export function eventsReducer (state = initialState, action) {
 
     case CHOOSE_EVENT:
       return { ...state, event: action.payload }
+
+    case DELETE_EVENT:
+      return { ...state, events: action.payload }
 
     default:
       return state

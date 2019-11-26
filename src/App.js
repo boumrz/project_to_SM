@@ -18,12 +18,13 @@ class App extends React.Component {
           <Route exact path="/" component={Main} />
           <Route exact path="/events_add" component={AddEventsPage} />
           <Route exact path="/login" component={Login} />
-          <Route exact path="/events" component={Events} />
+          <Route path="/events" component={Events} />
           <Route exact path="/sale" component={Sale} />
           <Route exact path="/news" component={News} />
           <Route exact path="/registration" component={Registration} />
           <Route exact path="/events/events_add" />
           <Route exact path="/event_info" component={pageInfo} />
+          <Route path="/delete/" />
           <Redirect to="/" />
         </Switch>
       </BrowserRouter>

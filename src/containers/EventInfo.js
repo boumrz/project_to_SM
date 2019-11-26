@@ -2,17 +2,18 @@ import React from 'react'
 import Header from '../components/header/Header'
 import Footer from '../components/footer/Footer'
 import { connect } from 'react-redux'
+import { deleteEvent } from '../actions/eventsAction'
 import EventInfo from '../components/pageInfo/Info'
 
-class Events extends React.Component {
+class EventsInfo extends React.Component {
   render () {
-    const { events } = this.props
+    const { events, deleteEventAction } = this.props
 
     return (
       <div className="">
         <Header />
 
-        <EventInfo event={events.event} />
+        <EventInfo event={events.event} deleteEvent={deleteEventAction} />
 
         <Footer />
       </div>
@@ -26,4 +27,10 @@ const mapStateToProps = store => {
   }
 }
 
-export default connect(mapStateToProps)(Events)
+const mapDispatchToProps = dispatch => {
+  return {
+    deleteEventAction: id => dispatch(deleteEvent(id))
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(EventsInfo)

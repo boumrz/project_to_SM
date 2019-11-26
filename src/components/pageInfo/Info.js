@@ -1,9 +1,11 @@
 import React from 'react'
 import './Info.scss'
+import { Link } from 'react-router-dom'
 
 class Info extends React.Component {
   render () {
-    const { event } = this.props
+    const { event, deleteEvent } = this.props
+    const link = '/delete/' + event.id
     if (event != 0) {
       return (
         <div className="info">
@@ -25,8 +27,16 @@ class Info extends React.Component {
               <p> {event.price}</p>
               <h3>Описание мероприятия</h3>
               <p> {event.description}</p>
+
               <button className="btn_see1">Изменить</button>
-              <button className="btn_see">Удалить</button>
+              <Link
+                to={link}
+                onClick={() => {
+                  return deleteEvent(event.id)
+                }}
+              >
+                <button className="btn_see">Удалить</button>
+              </Link>
             </div>
           </div>
         </div>
