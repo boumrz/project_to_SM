@@ -11,8 +11,6 @@ const RegistrationReduxFormStudents = reduxForm({form: 'registration'})(Registra
 
 const RegistrationReduxFormOrganization = reduxForm({form: 'registration'})(RegistrationFormOrganization);
 
-
-
 class Registration extends React.Component {
 
     render() {
@@ -30,12 +28,10 @@ class Registration extends React.Component {
                 { 
                     category.category==='student' &&
                 <RegistrationReduxFormStudents onSubmit={onSubmit}/>
-      }
+                }
       {  category.category==='organization' &&
       <RegistrationReduxFormOrganization onSubmit={onSubmit}/>
       }
-                       
-                    
                 </div>
                 <div id="fade" className="black_overlay"/>
             </div>

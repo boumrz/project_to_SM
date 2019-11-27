@@ -6,6 +6,7 @@ import {requiredField, validatePasswordCreator} from './validators/validators'
 const validatePassCreator = validatePasswordCreator(8);
 
 export default class RegistrationFormStudents extends React.Component {
+
   render() {
 
     return (

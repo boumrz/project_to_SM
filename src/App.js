@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Redirect, Switch } from "react-router-dom";
 import Registration from "../src/containers/RegistrationReduxForm";
 import Main from "./components/pageMain/Main";
 import Login from "./containers/login";
-import Events from "./components/pageEvents/Events";
+import Events from "./components/pageEvents/events";
 import Sale from "./components/pageSale/sale";
 import News from "./components/pageNews/news"
 import './App.css';
