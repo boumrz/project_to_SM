@@ -1,0 +1,50 @@
+{
+  "files": {
+<<<<<<< HEAD
+    "main.css": "/static/css/main.c7de0b06.chunk.css",
+    "main.js": "/static/js/main.0dfc8e39.chunk.js",
+    "main.js.map": "/static/js/main.0dfc8e39.chunk.js.map",
+=======
+    "main.css": "/static/css/main.ed1ab4ee.chunk.css",
+    "main.js": "/static/js/main.ee0be8d2.chunk.js",
+    "main.js.map": "/static/js/main.ee0be8d2.chunk.js.map",
+>>>>>>> 45ac6d7bfb12a7c611fa25aa5472f399cd2799a8
+    "runtime-main.js": "/static/js/runtime-main.5b2b56cd.js",
+    "runtime-main.js.map": "/static/js/runtime-main.5b2b56cd.js.map",
+    "static/js/2.bf025896.chunk.js": "/static/js/2.bf025896.chunk.js",
+    "static/js/2.bf025896.chunk.js.map": "/static/js/2.bf025896.chunk.js.map",
+    "index.html": "/index.html",
+<<<<<<< HEAD
+    "precache-manifest.3529dca2ec73f5f177d6bbe77de3fd7a.js": "/precache-manifest.3529dca2ec73f5f177d6bbe77de3fd7a.js",
+=======
+    "precache-manifest.85ba25ddeac84e5c3cb3bb95057b38de.js": "/precache-manifest.85ba25ddeac84e5c3cb3bb95057b38de.js",
+>>>>>>> 45ac6d7bfb12a7c611fa25aa5472f399cd2799a8
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.c7de0b06.chunk.css.map": "/static/css/main.c7de0b06.chunk.css.map",
+    "static/media/1-discount.png": "/static/media/1-discount.1e697b0e.png",
+    "static/media/1.jpg": "/static/media/1.ed3f9a45.jpg",
+    "static/media/2-discount.png": "/static/media/2-discount.70af1d95.png",
+    "static/media/2.jpg": "/static/media/2.414f22eb.jpg",
+    "static/media/3-discount.png": "/static/media/3-discount.6cb058f2.png",
+    "static/media/3.jpg": "/static/media/3.a789ff32.jpg",
+    "static/media/4-discount.png": "/static/media/4-discount.146989f7.png",
+    "static/media/5-discount.png": "/static/media/5-discount.c8604953.png",
+    "static/media/6-discount.png": "/static/media/6-discount.ffd22400.png",
+    "static/media/header.scss": "/static/media/background-head.d0965b14.png",
+    "static/media/footer.css": "/static/media/footer.cd172c3b.jpg",
+    "static/media/insta.png": "/static/media/insta.b47d408e.png",
+    "static/media/vk.png": "/static/media/vk.c4a1a297.png",
+    "static/media/youtube.png": "/static/media/youtube.8e3388b6.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5b2b56cd.js",
+    "static/js/2.bf025896.chunk.js",
+<<<<<<< HEAD
+    "static/css/main.c7de0b06.chunk.css",
+    "static/js/main.0dfc8e39.chunk.js"
+=======
+    "static/css/main.ed1ab4ee.chunk.css",
+    "static/js/main.ee0be8d2.chunk.js"
+>>>>>>> 45ac6d7bfb12a7c611fa25aa5472f399cd2799a8
+  ]
+}
